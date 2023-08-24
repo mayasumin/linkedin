@@ -289,3 +289,48 @@ section .centralizar {
     color: var(--texto-principal);
     text-align: justify;
 }
+
+.experiencias {
+    display: flex;
+    flex-direction: column;
+    gap: 0.56rem;
+    color: var(--texto-principal);
+}
+
+.experiencias .dados-empresa {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.experiencias .foto-empresa {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+}
+
+.dados-empresa .descricao, .funcao .cargo {
+    display: flex;
+    flex-direction: column;
+    font: normal 600 1rem/1.25rem var(--font-family);
+}
+
+.descricao .permanencia, .funcao .turno, .funcao .periodo, .funcao .local {
+    font: normal 400 .875rem/1rem var(--font-family);
+}
+
+.descricao .permanencia, .funcao .periodo {
+    color: var(--texto-secundario);
+}
+
+.experiencias .container-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.56rem;
+}
+
+.container-timeline .funcao {
+    margin-left: 1.2rem;
+    display: flex;
+    gap: 1.75rem;
+}
