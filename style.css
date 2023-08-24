@@ -303,7 +303,7 @@ section .centralizar {
     align-items: center;
 }
 
-.experiencias .foto-empresa {
+.experiencias .foto-empresa, .container-formacao-academica img {
     width: 3rem;
     height: 3rem;
     object-fit: cover;
@@ -315,11 +315,11 @@ section .centralizar {
     font: normal 600 1rem/1.25rem var(--font-family);
 }
 
-.descricao .permanencia, .funcao .turno, .funcao .periodo, .funcao .local {
+.descricao .permanencia, .funcao .turno, .funcao .periodo, .funcao .local, .container-formacao-academica .curso, .container-formacao-academica .periodo {
     font: normal 400 .875rem/1rem var(--font-family);
 }
 
-.descricao .permanencia, .funcao .periodo {
+.descricao .permanencia, .funcao .periodo, .container-formacao-academica .periodo {
     color: var(--texto-secundario);
 }
 
@@ -333,4 +333,12 @@ section .centralizar {
     margin-left: 1.2rem;
     display: flex;
     gap: 1.75rem;
+}
+
+.container-formacao-academica {
+    display: flex;
+    gap: 0.56rem;
+    align-items: center;
+    font: normal 600 1rem/1.25rem var(--font-family);
+    color: var(--texto-principal);
 }
