@@ -1,0 +1,175 @@
+:root{
+    --fundo-escuro: #000;
+    --fundo-card: #1d2226;
+    --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+    --texto-principal: hsla(0, 0%, 100%, 0.9);
+    --texto-secundario: hsla(0, 0%, 100%, 0.6);
+    --texto-escuro: hsla(0, 0%, 0%, 0.75);
+    --input: #38434F;
+    --primario: #70b5f9;
+    --positivo: #3ec786;
+    --font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 3.25rem;
+    display: flex;
+    gap: 7.5rem;
+    background-color: var(--fundo-card);
+    padding-left: 9.56rem;
+    color: var(--texto-principal);
+}
+
+nav .input-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-pesquisa input {
+    width: 17.5rem;
+    height: 2.125rem;
+    background: url("./svg/icone-busca.svg") no-repeat;
+    background-color: var(--input);
+    background-position-x: 3%;
+    background-position-y: center;
+    padding-left: 2.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font: normal 400 .875rem/1.875rem var(--font-family);
+}
+
+ul {
+    display: flex;
+    align-content: center;
+    gap: 3.5rem;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: normal 400 .75rem/normal var(--font-family);
+}
+
+main {
+    margin-top: 1.5rem;
+    margin-left: 9.62rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+main section {
+    width: 48.75rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    background-color: var(--fundo-card);
+    border-radius: 1rem;
+}
+
+main h3 {
+    font: normal 600 1.25rem var(--font-family);
+    color: var(--texto-principal);
+}
+
+section .reacoes {
+    display: flex;
+    align-items: center;
+    font: normal 400 .75rem/1.25rem var(--font-family);
+    color: var(--texto-secundario);
+}
+
+.informacoes-perfil {
+    height: 30.25rem;
+    color: var(--texto-principal);
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.informacoes-perfil .foto-perfil {
+    width: 10rem;
+    height: 10rem;
+    background-image: url("./images/foto-de-perfil.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 12.5rem;
+    left: 11rem;
+    border: 4px solid var(--fundo-card);
+    border-radius: 10rem;
+}
+
+.container-perfil {
+    display: flex;
+    gap: 8.6rem;
+    margin-left: 1.5rem;
+    margin-top: 3.5rem;
+}
+
+.informacoes-pessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.container-perfil .descricao {
+    font: normal 400 .875rem/1.25rem var(--font-family);
+    color: var(--texto-secundario);
+}
+
+.container-perfil .destaque-azul {
+    font: normal 700 .875rem/1.25rem var(--font-family);
+    color: var(--primario);
+}
+
+.container-perfil .centralizar {
+    display: flex;
+    gap: 0.44rem;
+}
+
+.container-perfil h1 {
+    font: normal 600 1.5rem/1.8rem var(--font-family);
+}
+
+.container-perfil .subtitulo {
+    font: normal 600 1rem/1.25rem var(--font-family);
+}
+
+[data-btn] {
+    width: 8rem;
+    height: 2rem;
+    background: none;
+    border: 1px solid var(--primario);
+    border-radius: 1rem;
+    font: normal 500 .875rem/1.25rem var(--font-family);
+}
+
+[data-btn="com-fundo"] {
+    background-color: var(--primario);
+}
+
+[data-btn="sem-fundo"] {
+    margin-left: .44rem;
+    color: var(--primario);
+}
+
+.container-perfil .detalhes-carreira {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font: normal 600 1rem/1.25rem var(--font-family);
+}
+
+.container-perfil .carreira {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
