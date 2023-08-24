@@ -17,6 +17,20 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3.25rem auto;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
 nav {
     height: 3.25rem;
     display: flex;
@@ -61,6 +75,9 @@ li {
 }
 
 main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
     margin-top: 1.5rem;
     margin-left: 9.62rem;
     display: flex;
@@ -385,4 +402,10 @@ section .centralizar {
 .container-idiomas .fluencia {
     font: normal 400 .875rem/.5rem "Roboto", sans-serif;
     color: var(--texto-secundario);
+}
+
+aside {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
 }
