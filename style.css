@@ -315,11 +315,11 @@ section .centralizar {
     font: normal 600 1rem/1.25rem var(--font-family);
 }
 
-.descricao .permanencia, .funcao .turno, .funcao .periodo, .funcao .local, .container-formacao-academica .curso, .container-formacao-academica .periodo {
+.descricao .permanencia, .funcao .turno, .funcao .periodo, .funcao .local {
     font: normal 400 .875rem/1rem var(--font-family);
 }
 
-.descricao .permanencia, .funcao .periodo, .container-formacao-academica .periodo {
+.descricao .permanencia, .funcao .periodo {
     color: var(--texto-secundario);
 }
 
@@ -341,4 +341,48 @@ section .centralizar {
     align-items: center;
     font: normal 600 1rem/1.25rem var(--font-family);
     color: var(--texto-principal);
+}
+
+.container-formacao-academica .curso, .container-formacao-academica .periodo {
+    font: normal 400 .875rem/1rem var(--font-family);
+}
+
+.container-formacao-academica .periodo {
+    color: var(--texto-secundario);
+}
+
+.idiomas {
+    padding-left: 0;
+}
+
+.idiomas h3, .container-idiomas .ingles {
+    margin-left: 1.5rem;
+}
+
+.idiomas .container-idiomas {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--texto-principal);
+}
+
+.container-idiomas div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-idiomas .portugues {
+    border-bottom: 1px solid var(--texto-principal);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.container-idiomas .titulo {
+    font: normal 600 1rem/1.875rem "Roboto", sans-serif;
+}
+
+.container-idiomas .fluencia {
+    font: normal 400 .875rem/.5rem "Roboto", sans-serif;
+    color: var(--texto-secundario);
 }
